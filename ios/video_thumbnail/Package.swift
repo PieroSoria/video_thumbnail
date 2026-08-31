@@ -9,7 +9,7 @@ let package = Package(
         .iOS("15.0")
     ],
     products: [
-        .library(name: "video_thumbnail", targets: ["video_thumbnail"])
+        .library(name: "video-thumbnail", targets: ["video_thumbnail"])
     ],
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework"),
