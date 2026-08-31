@@ -20,7 +20,8 @@ let package = Package(
             name: "video_thumbnail",
             dependencies: [
                 .product(name: "FlutterFramework", package: "FlutterFramework"),
-                .product(name: "WebP", package: "webp-spm")
+                .product(name: "WebP", package: "webp-spm"),
+                .product(name: "SharpYuv", package: "webp-spm")
             ],
             cSettings: [
                 .headerSearchPath("include/video_thumbnail")
