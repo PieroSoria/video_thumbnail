@@ -9,7 +9,7 @@ let package = Package(
         .iOS("15.0")
     ],
     products: [
-        .library(name: "video-thumbnail", targets: ["video_thumbnail"])
+        .library(name: "video_thumbnail", targets: ["video_thumbnail"])
     ],
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework"),
@@ -21,6 +21,9 @@ let package = Package(
             dependencies: [
                 .product(name: "FlutterFramework", package: "FlutterFramework"),
                 .product(name: "WebP", package: "webp-spm")
+            ],
+            cSettings: [
+                .headerSearchPath("include/video_thumbnail")
             ]
         )
     ]
